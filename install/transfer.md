@@ -12,6 +12,9 @@ dateCreated: 2020-09-13T03:44:51.774Z
 
 This guide assumes you're currently using a **PostgreSQL** database installation of Wiki.js 2.x running on Docker on Linux, as detailed in the [Ubuntu installation guide](/install/ubuntu). This is the default installation method for 1-click images for DigitalOcean and AWS Marketplace.
 
+> Note: When dumping the database, disable Local Backup File System. If you do not disable it when uploading to another WIKI.JS, you will get a permission denied issue.
+{.is-danger}
+> 
 > Note that it is **NOT** possible to "convert" an installation from a different database engine *(e.g. MySQL, MSSQL or SQLite)*. You should instead export content manually to disk and re-import it into a new installation.
 {.is-danger}
 
